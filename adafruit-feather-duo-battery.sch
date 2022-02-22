@@ -1,0 +1,579 @@
+EESchema Schematic File Version 4
+LIBS:adafruit-feather-duo-battery-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Adafruit_Feather_Generic A1
+U 1 1 60498D24
+P 2550 2800
+F 0 "A1" H 2900 1550 50  0000 C CNN
+F 1 "ActiniusIcarus" H 2900 1450 50  0000 C CNN
+F 2 "Module:Adafruit_Feather" H 2650 1450 50  0001 L CNN
+F 3 "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-feather.pdf" H 2550 2000 50  0001 C CNN
+	1    2550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Adafruit_Feather_Generic A2
+U 1 1 60498DD0
+P 5450 2800
+F 0 "A2" H 5750 1550 50  0000 C CNN
+F 1 "ParticleXenon" H 5850 1450 50  0000 C CNN
+F 2 "Module:Adafruit_Feather" H 5550 1450 50  0001 L CNN
+F 3 "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-feather.pdf" H 5450 2000 50  0001 C CNN
+	1    5450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 60498EC5
+P 7950 2650
+F 0 "BT1" H 8068 2746 50  0000 L CNN
+F 1 "Battery_Cell" H 8068 2655 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 7950 2710 50  0001 C CNN
+F 3 "~" V 7950 2710 50  0001 C CNN
+	1    7950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0101
+U 1 1 6049912E
+P 7950 2300
+F 0 "#PWR0101" H 7950 2150 50  0001 C CNN
+F 1 "+BATT" H 7965 2473 50  0000 C CNN
+F 2 "" H 7950 2300 50  0001 C CNN
+F 3 "" H 7950 2300 50  0001 C CNN
+	1    7950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2300 7950 2450
+$Comp
+L power:GNDD #PWR0102
+U 1 1 60499217
+P 7950 2850
+F 0 "#PWR0102" H 7950 2600 50  0001 C CNN
+F 1 "GNDD" H 7954 2695 50  0000 C CNN
+F 2 "" H 7950 2850 50  0001 C CNN
+F 3 "" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2750 7950 2850
+$Comp
+L power:GNDD #PWR0103
+U 1 1 604992E8
+P 5450 4150
+F 0 "#PWR0103" H 5450 3900 50  0001 C CNN
+F 1 "GNDD" H 5454 3995 50  0000 C CNN
+F 2 "" H 5450 4150 50  0001 C CNN
+F 3 "" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4100 5450 4150
+$Comp
+L power:GNDD #PWR0104
+U 1 1 6049937F
+P 2550 4150
+F 0 "#PWR0104" H 2550 3900 50  0001 C CNN
+F 1 "GNDD" H 2554 3995 50  0000 C CNN
+F 2 "" H 2550 4150 50  0001 C CNN
+F 3 "" H 2550 4150 50  0001 C CNN
+	1    2550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4100 2550 4150
+$Comp
+L power:+BATT #PWR0105
+U 1 1 6049941D
+P 2450 1200
+F 0 "#PWR0105" H 2450 1050 50  0001 C CNN
+F 1 "+BATT" H 2465 1373 50  0000 C CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0106
+U 1 1 604994D0
+P 2650 1200
+F 0 "#PWR0106" H 2650 1050 50  0001 C CNN
+F 1 "VDD" H 2665 1373 50  0000 C CNN
+F 2 "" H 2650 1200 50  0001 C CNN
+F 3 "" H 2650 1200 50  0001 C CNN
+	1    2650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0107
+U 1 1 60499659
+P 6400 2350
+F 0 "#PWR0107" H 6400 2100 50  0001 C CNN
+F 1 "GNDD" H 6404 2195 50  0000 C CNN
+F 2 "" H 6400 2350 50  0001 C CNN
+F 3 "" H 6400 2350 50  0001 C CNN
+	1    6400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0108
+U 1 1 604996DB
+P 5550 1200
+F 0 "#PWR0108" H 5550 1050 50  0001 C CNN
+F 1 "VDD" H 5565 1373 50  0000 C CNN
+F 2 "" H 5550 1200 50  0001 C CNN
+F 3 "" H 5550 1200 50  0001 C CNN
+	1    5550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1200 5550 1600
+$Comp
+L Mechanical:DIN_Rail_Adapter DRA1
+U 1 1 60499B76
+P 3100 6150
+F 0 "DRA1" H 3100 6415 50  0000 C CNN
+F 1 "DIN_Rail_Adapter" H 3100 6324 50  0000 C CNN
+F 2 "MountingEquipment:DINRailAdapter_3xM3_PhoenixContact_1201578" H 3100 5950 50  0001 C CNN
+F 3 "~" H 3100 6300 50  0001 C CNN
+	1    3100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:DIN_Rail_Adapter DRA2
+U 1 1 60499CA5
+P 4050 6150
+F 0 "DRA2" H 4050 6415 50  0000 C CNN
+F 1 "DIN_Rail_Adapter" H 4050 6324 50  0000 C CNN
+F 2 "MountingEquipment:DINRailAdapter_3xM3_PhoenixContact_1201578" H 4050 5950 50  0001 C CNN
+F 3 "~" H 4050 6300 50  0001 C CNN
+	1    4050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6049A040
+P 9350 2500
+F 0 "J1" H 9430 2492 50  0000 L CNN
+F 1 "Solar" H 9430 2401 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9350 2500 50  0001 C CNN
+F 3 "~" H 9350 2500 50  0001 C CNN
+	1    9350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0109
+U 1 1 6049A12D
+P 9100 2650
+F 0 "#PWR0109" H 9100 2400 50  0001 C CNN
+F 1 "GNDD" H 9104 2495 50  0000 C CNN
+F 2 "" H 9100 2650 50  0001 C CNN
+F 3 "" H 9100 2650 50  0001 C CNN
+	1    9100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2650 9100 2600
+Wire Wire Line
+	9100 2600 9150 2600
+Text Label 9150 2500 2    50   ~ 0
+V_USB
+Text Label 1650 2700 2    50   ~ 0
+V_USB
+Text Label 2050 3300 2    50   ~ 0
+SERIAL_RX
+Text Label 2050 3400 2    50   ~ 0
+SERIAL_TX
+Text Label 4950 3300 2    50   ~ 0
+SERIAL_TX
+Text Label 4950 3400 2    50   ~ 0
+SERIAL_RX
+Text Label 2050 3600 2    50   ~ 0
+I2C_SDA
+Text Label 2050 3700 2    50   ~ 0
+I2C_SCL
+Text Label 4950 3700 2    50   ~ 0
+I2C_SCL
+Text Label 4950 3600 2    50   ~ 0
+I2C_SDA
+Text Label 2050 2900 2    50   ~ 0
+SPI_SCK
+Text Label 4950 2900 2    50   ~ 0
+SPI_SCK
+Text Label 2050 3000 2    50   ~ 0
+SPI_MOSI
+Text Label 2050 3100 2    50   ~ 0
+SPI_MISO
+Text Label 4950 3100 2    50   ~ 0
+SPI_MOSI
+Text Label 4950 3000 2    50   ~ 0
+SPI_MISO
+$Comp
+L Jumper:Jumper_2_Open JP6
+U 1 1 60527120
+P 5650 1400
+F 0 "JP6" V 5604 1498 50  0000 L CNN
+F 1 "Jumper_2_Open" V 5695 1498 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5650 1400 50  0001 C CNN
+F 3 "~" H 5650 1400 50  0001 C CNN
+	1    5650 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 60527222
+P 2750 1400
+F 0 "JP2" V 2750 1500 50  0000 L CNN
+F 1 "Jumper_2_Open" V 2850 1500 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 1400 50  0001 C CNN
+F 3 "~" H 2750 1400 50  0001 C CNN
+	1    2750 1400
+	0    1    1    0   
+$EndComp
+Text Label 5650 1200 0    50   ~ 0
+V_USB
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 6052732A
+P 2450 1400
+F 0 "JP1" V 2400 1600 50  0000 R CNN
+F 1 "Jumper_2_Open" V 2500 2050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 1400 50  0001 C CNN
+F 3 "~" H 2450 1400 50  0001 C CNN
+	1    2450 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP5
+U 1 1 60527460
+P 5350 1400
+F 0 "JP5" V 5300 1600 50  0000 R CNN
+F 1 "Jumper_2_Open" V 5400 2050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5350 1400 50  0001 C CNN
+F 3 "~" H 5350 1400 50  0001 C CNN
+	1    5350 1400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2650 1200 2650 1600
+$Comp
+L power:+BATT #PWR0110
+U 1 1 6052787C
+P 5350 1200
+F 0 "#PWR0110" H 5350 1050 50  0001 C CNN
+F 1 "+BATT" H 5365 1373 50  0000 C CNN
+F 2 "" H 5350 1200 50  0001 C CNN
+F 3 "" H 5350 1200 50  0001 C CNN
+	1    5350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP8
+U 1 1 6052794C
+P 6150 2300
+F 0 "JP8" H 6150 2075 50  0000 C CNN
+F 1 "Jumper_2_Open" H 6150 2166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 2300 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP4
+U 1 1 60527A47
+P 3250 2300
+F 0 "JP4" H 3250 2075 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3250 2166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 2300 50  0001 C CNN
+F 3 "~" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDD #PWR0111
+U 1 1 60527B92
+P 3500 2350
+F 0 "#PWR0111" H 3500 2100 50  0001 C CNN
+F 1 "GNDD" H 3504 2195 50  0000 C CNN
+F 2 "" H 3500 2350 50  0001 C CNN
+F 3 "" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+Text Label 6350 2000 0    50   ~ 0
+RESET_2
+$Comp
+L Jumper:Jumper_2_Open JP7
+U 1 1 60528021
+P 6150 2000
+F 0 "JP7" H 6150 2235 50  0000 C CNN
+F 1 "Jumper_2_Open" H 6150 2144 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 2000 50  0001 C CNN
+F 3 "~" H 6150 2000 50  0001 C CNN
+	1    6150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2300 6400 2300
+Wire Wire Line
+	6400 2300 6400 2350
+$Comp
+L Jumper:Jumper_2_Open JP3
+U 1 1 60528392
+P 3250 2000
+F 0 "JP3" H 3250 2235 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3250 2144 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 2000 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	1    0    0    -1  
+$EndComp
+Text Label 3450 2000 0    50   ~ 0
+RESET_1
+Wire Wire Line
+	3450 2300 3500 2300
+Wire Wire Line
+	3500 2300 3500 2350
+Text Label 4950 2000 2    50   ~ 0
+RESET_1
+Text Label 2050 2000 2    50   ~ 0
+RESET_2
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 60528C3E
+P 6850 6000
+F 0 "J4" H 6929 6042 50  0000 L CNN
+F 1 "Conn_A2" H 6929 5951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6850 6000 50  0001 C CNN
+F 3 "~" H 6850 6000 50  0001 C CNN
+	1    6850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 60528D0C
+P 6850 4900
+F 0 "J2" H 6929 4942 50  0000 L CNN
+F 1 "Conn_A1" H 6929 4851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6850 4900 50  0001 C CNN
+F 3 "~" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 60529449
+P 7750 4900
+F 0 "J3" H 7829 4942 50  0000 L CNN
+F 1 "Conn_A1" H 7829 4851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-5_P5.08mm" H 7750 4900 50  0001 C CNN
+F 3 "~" H 7750 4900 50  0001 C CNN
+	1    7750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 605294AF
+P 7750 6000
+F 0 "J5" H 7829 6042 50  0000 L CNN
+F 1 "Conn_A2" H 7829 5951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-5_P5.08mm" H 7750 6000 50  0001 C CNN
+F 3 "~" H 7750 6000 50  0001 C CNN
+	1    7750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0112
+U 1 1 60529777
+P 6550 4550
+F 0 "#PWR0112" H 6550 4400 50  0001 C CNN
+F 1 "VDD" H 6565 4723 50  0000 C CNN
+F 2 "" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0113
+U 1 1 605297A6
+P 7450 4550
+F 0 "#PWR0113" H 7450 4400 50  0001 C CNN
+F 1 "VDD" H 7465 4723 50  0000 C CNN
+F 2 "" H 7450 4550 50  0001 C CNN
+F 3 "" H 7450 4550 50  0001 C CNN
+	1    7450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0114
+U 1 1 605298E4
+P 6550 5700
+F 0 "#PWR0114" H 6550 5550 50  0001 C CNN
+F 1 "VDD" H 6565 5873 50  0000 C CNN
+F 2 "" H 6550 5700 50  0001 C CNN
+F 3 "" H 6550 5700 50  0001 C CNN
+	1    6550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0115
+U 1 1 60529913
+P 7450 5700
+F 0 "#PWR0115" H 7450 5550 50  0001 C CNN
+F 1 "VDD" H 7465 5873 50  0000 C CNN
+F 2 "" H 7450 5700 50  0001 C CNN
+F 3 "" H 7450 5700 50  0001 C CNN
+	1    7450 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5800 7450 5800
+Wire Wire Line
+	7450 5800 7450 5700
+Wire Wire Line
+	6650 5800 6550 5800
+Wire Wire Line
+	6550 5800 6550 5700
+Wire Wire Line
+	6650 4700 6550 4700
+Wire Wire Line
+	6550 4700 6550 4550
+Wire Wire Line
+	7550 4700 7450 4700
+Wire Wire Line
+	7450 4700 7450 4550
+$Comp
+L power:GNDD #PWR0116
+U 1 1 60529F1A
+P 6550 5200
+F 0 "#PWR0116" H 6550 4950 50  0001 C CNN
+F 1 "GNDD" H 6554 5045 50  0000 C CNN
+F 2 "" H 6550 5200 50  0001 C CNN
+F 3 "" H 6550 5200 50  0001 C CNN
+	1    6550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0117
+U 1 1 60529F49
+P 7450 5200
+F 0 "#PWR0117" H 7450 4950 50  0001 C CNN
+F 1 "GNDD" H 7454 5045 50  0000 C CNN
+F 2 "" H 7450 5200 50  0001 C CNN
+F 3 "" H 7450 5200 50  0001 C CNN
+	1    7450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0118
+U 1 1 60529FB8
+P 6550 6300
+F 0 "#PWR0118" H 6550 6050 50  0001 C CNN
+F 1 "GNDD" H 6554 6145 50  0000 C CNN
+F 2 "" H 6550 6300 50  0001 C CNN
+F 3 "" H 6550 6300 50  0001 C CNN
+	1    6550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0119
+U 1 1 60529FE7
+P 7450 6300
+F 0 "#PWR0119" H 7450 6050 50  0001 C CNN
+F 1 "GNDD" H 7454 6145 50  0000 C CNN
+F 2 "" H 7450 6300 50  0001 C CNN
+F 3 "" H 7450 6300 50  0001 C CNN
+	1    7450 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6300 6550 6200
+Wire Wire Line
+	6550 6200 6650 6200
+Wire Wire Line
+	7450 6300 7450 6200
+Wire Wire Line
+	7450 6200 7550 6200
+Wire Wire Line
+	6550 5200 6550 5100
+Wire Wire Line
+	6550 5100 6650 5100
+Wire Wire Line
+	7450 5200 7450 5100
+Wire Wire Line
+	7450 5100 7550 5100
+Text Label 3050 2600 0    50   ~ 0
+A1_A0
+Text Label 2050 2100 2    50   ~ 0
+A1_D1
+Text Label 2050 2200 2    50   ~ 0
+A1_D2
+Text Label 6650 4800 2    50   ~ 0
+A1_A0
+Text Label 7550 4800 2    50   ~ 0
+A1_A0
+Text Label 6650 4900 2    50   ~ 0
+A1_D1
+Text Label 7550 4900 2    50   ~ 0
+A1_D1
+Text Label 6650 5000 2    50   ~ 0
+A1_D2
+Text Label 7550 5000 2    50   ~ 0
+A1_D2
+Text Label 5950 2600 0    50   ~ 0
+A2_A0
+Text Label 4950 2100 2    50   ~ 0
+A2_D1
+Text Label 4950 2200 2    50   ~ 0
+A2_D2
+Text Label 6650 5900 2    50   ~ 0
+A2_A0
+Text Label 7550 5900 2    50   ~ 0
+A2_A0
+Text Label 6650 6000 2    50   ~ 0
+A2_D1
+Text Label 7550 6000 2    50   ~ 0
+A2_D1
+Text Label 6650 6100 2    50   ~ 0
+A2_D2
+Text Label 7550 6100 2    50   ~ 0
+A2_D2
+Text Label 2050 2300 2    50   ~ 0
+I2C_RTS
+Text Label 2050 2400 2    50   ~ 0
+I2C_CTS
+Text Label 4950 2400 2    50   ~ 0
+I2C_RTS
+Text Label 4950 2300 2    50   ~ 0
+I2C_CTS
+Text Label 2750 1200 0    50   ~ 0
+V_USB
+$Comp
+L Jumper:Jumper_2_Open JP9
+U 1 1 6054A658
+P 1850 2700
+F 0 "JP9" H 1700 2800 50  0000 L CNN
+F 1 "Jumper_2_Open" H 1600 2600 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 2700 50  0001 C CNN
+F 3 "~" H 1850 2700 50  0001 C CNN
+	1    1850 2700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
